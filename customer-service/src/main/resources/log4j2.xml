@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug">
+
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" >
+            <PatternLayout  pattern="[%t] %d{MM/dd/yyyy HH:mm:ss} %-5p (%c{1}.%M:%L) - %m%n"/>
+        </Console>
+
+        <File name="log" fileName="customerservice.log">
+            <PatternLayout>
+                <pattern>[%-5p] %d %c - %m%n</pattern>
+            </PatternLayout>
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO" includeLocation="true">
+            <Appender-ref ref="log"/>
+            <Appender-ref ref="console"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
