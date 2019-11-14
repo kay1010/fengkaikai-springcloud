@@ -7,14 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="customer-service" />
-        <module name="userService" />
         <module name="eureka-server" />
+        <module name="user-service" />
+        <module name="userService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="customer-service" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="fengkaikai" target="1.8" />
+      <module name="user-service" target="1.8" />
       <module name="userService" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +25,7 @@
       <module name="customer-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="fengkaikai" options="-parameters" />
+      <module name="user-service" options="-parameters" />
       <module name="userService" options="-parameters" />
     </option>
   </component>
