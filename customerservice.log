@@ -90,3 +90,85 @@
 [INFO ] 2019-11-14 09:58:02,102 org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
 [INFO ] 2019-11-14 09:58:02,103 org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8060
 [INFO ] 2019-11-14 09:58:02,266 com.example.customerservice.CustomerServiceApplication - Started CustomerServiceApplication in 3.307 seconds (JVM running for 4.333)
+[INFO ] 2019-11-14 14:07:48,303 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec7c6450] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2019-11-14 14:07:48,646 com.example.customerservice.CustomerServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-11-14 14:07:49,120 org.springframework.cloud.context.scope.GenericScope - BeanFactory id=8d70222c-ff37-3dd5-a774-7b8f802d3eea
+[INFO ] 2019-11-14 14:07:49,210 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec7c6450] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2019-11-14 14:07:49,491 org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+[INFO ] 2019-11-14 14:07:49,508 org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+[INFO ] 2019-11-14 14:07:49,509 org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-11-14 14:07:49,509 org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[INFO ] 2019-11-14 14:07:49,600 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-11-14 14:07:49,600 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 941 ms
+[WARN ] 2019-11-14 14:07:49,677 com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2019-11-14 14:07:49,678 com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN ] 2019-11-14 14:07:49,683 com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2019-11-14 14:07:49,684 com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2019-11-14 14:07:49,810 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[WARN ] 2019-11-14 14:07:50,392 org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[INFO ] 2019-11-14 14:07:50,471 org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2019-11-14 14:07:50,495 com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+[INFO ] 2019-11-14 14:07:50,736 com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[INFO ] 2019-11-14 14:07:50,736 com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[INFO ] 2019-11-14 14:07:50,811 com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[INFO ] 2019-11-14 14:07:50,811 com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[INFO ] 2019-11-14 14:07:50,937 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2019-11-14 14:07:51,022 com.netflix.discovery.DiscoveryClient - Disable delta property : false
+[INFO ] 2019-11-14 14:07:51,023 com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2019-11-14 14:07:51,023 com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+[INFO ] 2019-11-14 14:07:51,023 com.netflix.discovery.DiscoveryClient - Application is null : false
+[INFO ] 2019-11-14 14:07:51,023 com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2019-11-14 14:07:51,023 com.netflix.discovery.DiscoveryClient - Application version is -1: true
+[INFO ] 2019-11-14 14:07:51,023 com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2019-11-14 14:07:51,119 com.netflix.discovery.DiscoveryClient - The response status is 200
+[INFO ] 2019-11-14 14:07:51,121 com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[INFO ] 2019-11-14 14:07:51,123 com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO ] 2019-11-14 14:07:51,125 com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1573711671124 with initial instances count: 1
+[INFO ] 2019-11-14 14:07:51,127 org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application CUSTOMER-SERVICE with eureka with status UP
+[INFO ] 2019-11-14 14:07:51,127 com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1573711671127, current=UP, previous=STARTING]
+[INFO ] 2019-11-14 14:07:51,128 com.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/fkk-PC:customer-service:8060: registering service...
+[INFO ] 2019-11-14 14:07:51,137 org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+[INFO ] 2019-11-14 14:07:51,152 com.netflix.discovery.DiscoveryClient - DiscoveryClient_CUSTOMER-SERVICE/fkk-PC:customer-service:8060 - registration status: 204
+[INFO ] 2019-11-14 14:07:51,156 org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+[INFO ] 2019-11-14 14:07:51,156 org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8060
+[INFO ] 2019-11-14 14:07:51,321 com.example.customerservice.CustomerServiceApplication - Started CustomerServiceApplication in 3.737 seconds (JVM running for 4.855)
+[INFO ] 2019-11-14 14:12:51,029 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2019-11-14 14:13:04,190 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-11-14 14:13:04,191 org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-11-14 14:13:04,196 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[INFO ] 2019-11-14 14:13:34,994 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:35,145 com.netflix.config.ChainedDynamicProperty - Flipping property: USER-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO ] 2019-11-14 14:13:35,165 com.netflix.util.concurrent.ShutdownEnabledTimer - Shutdown hook installed for: NFLoadBalancer-PingTimer-USER-SERVICE
+[INFO ] 2019-11-14 14:13:35,166 com.netflix.loadbalancer.BaseLoadBalancer - Client: USER-SERVICE instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=USER-SERVICE,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[INFO ] 2019-11-14 14:13:35,169 com.netflix.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+[INFO ] 2019-11-14 14:13:35,183 com.netflix.config.ChainedDynamicProperty - Flipping property: USER-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO ] 2019-11-14 14:13:35,185 com.netflix.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client USER-SERVICE initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=USER-SERVICE,current list of Servers=[fkk-PC:8070, fkk-PC:8071],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:fkk-PC:8071;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:fkk-PC:8070;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@42dbee06
+[INFO ] 2019-11-14 14:13:36,174 com.netflix.config.ChainedDynamicProperty - Flipping property: USER-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO ] 2019-11-14 14:13:49,453 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:51,945 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:53,436 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:56,760 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:56,939 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:57,122 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:57,261 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:57,443 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:57,611 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:57,764 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:57,934 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:58,085 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:58,281 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:58,435 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:58,595 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:58,773 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:58,930 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:59,084 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:59,391 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:59,561 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:59,710 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:13:59,882 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:14:00,072 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:14:00,230 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
+[INFO ] 2019-11-14 14:14:00,403 com.example.customerservice.controller.CustomerController - -------CustomerController request USER-SERVICE for getUser-----
