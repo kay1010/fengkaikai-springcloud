@@ -1,8 +1,10 @@
 server:
   port: 8761
+  servlet:
+    context-path: /eurekaServer
 eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+      defaultZone: http://127.0.0.1:8761/eurekaServer/eureka
