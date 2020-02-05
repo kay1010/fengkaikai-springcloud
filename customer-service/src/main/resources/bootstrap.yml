@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      name: customer
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eurekaServer/eureka
+  instance:
+    prefer-ip-address: true
