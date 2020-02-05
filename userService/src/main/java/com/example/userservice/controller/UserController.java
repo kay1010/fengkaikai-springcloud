@@ -2,6 +2,8 @@ package com.example.userservice.controller;
 
 import com.example.userservice.service.MqSendService;
 import com.example.userservice.service.UserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.slf4j.Logger;
@@ -16,6 +18,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+@Api(tags = "MQ API")
+@CrossOrigin//实现跨域访问
 public class UserController {
     private static Logger logger= LoggerFactory.getLogger(UserController.class);
 
@@ -42,16 +46,17 @@ public class UserController {
 
     }
 
-
-    @RequestMapping("/user/sendp2p/{userName}")
-    public String sendMsg_p2p(String userName){
+    @ApiOperation("send msg for Queue")
+    @RequestMapping(value="/user/sendp2p/{userName}",method = RequestMethod.GET)
+    public String sendMsg_p2p(@PathVariable("userName") String userName){
         userService.addUser(userName);
         mqSendService.SendMsgP2p(queue,userName);
         return "success";
     }
 
-    @RequestMapping("/user/sendtopic/{userName}")
-    public String sendMsg_topic(String userName){
+    @ApiOperation("send msg for Topic")
+    @RequestMapping(value="/user/sendtopic/{userName}",method = RequestMethod.GET)
+    public String sendMsg_topic(@PathVariable("userName") String userName){
         userService.addUser(userName);
         mqSendService.SendMsgTopic(topic,userName);
         return "success";

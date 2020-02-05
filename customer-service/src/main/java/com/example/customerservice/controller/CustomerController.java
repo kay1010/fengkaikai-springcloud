@@ -1,12 +1,14 @@
 package com.example.customerservice.controller;
 
 
+import com.example.customerservice.feignService.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,11 +23,15 @@ public class CustomerController {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private UserService userService;
+
     @ApiOperation("获取用户姓名")
     @GetMapping("/user/{userName}")
     private String getUser(@PathVariable("userName") String userName){
         logger.info("-------CustomerController request USER-SERVICE for getUser-----");
-        return restTemplate.getForObject("http://USER-SERVICE/user/"+userName,String.class);
+        //return restTemplate.getForObject("http://USER-SERVICE/user/"+userName,String.class);
+        return userService.getUser(userName);
     }
 
     /*----------p2p 监听------------------------*/

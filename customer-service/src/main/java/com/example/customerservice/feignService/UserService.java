@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "USER-SERVICE")
 public interface UserService {
     @GetMapping("/user/{userName}")
-    String getUser(@PathVariable("userName") String name);
+    String getUser(@PathVariable("userName ") String name);
 }

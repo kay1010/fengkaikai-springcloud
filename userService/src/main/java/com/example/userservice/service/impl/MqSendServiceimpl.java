@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 
 import javax.jms.Queue;
 import javax.jms.Topic;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class MqSendServiceimpl implements MqSendService {
@@ -31,4 +33,11 @@ public class MqSendServiceimpl implements MqSendService {
         jmsMessagingTemplate.convertAndSend(topic,msg);
         logger.info("----send msg topic success!");
     }
+
+
+
+
+
+
+
 }
