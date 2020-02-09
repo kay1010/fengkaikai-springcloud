@@ -9,6 +9,8 @@ import org.apache.activemq.command.ActiveMQTopic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import javax.jms.Queue;
@@ -20,9 +22,12 @@ import java.util.Map;
 @RestController
 @Api(tags = "MQ API")
 @CrossOrigin//实现跨域访问
+@RefreshScope
 public class UserController {
     private static Logger logger= LoggerFactory.getLogger(UserController.class);
 
+    @Value("${text}")
+    private String text;
     @Autowired
     private UserService userService;
 
@@ -43,6 +48,12 @@ public class UserController {
        Map<String,Object> user= new HashMap<>();
        user.put("user",userName);
        return user;
+
+    }
+    @GetMapping("/user/text")
+    private String getServerPort(HttpServletRequest request){
+        logger.info("------------reuqest url:"+request.getRequestURL());
+        return text;
 
     }
 

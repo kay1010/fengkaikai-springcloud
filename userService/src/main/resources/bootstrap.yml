@@ -13,3 +13,10 @@ eureka:
       defaultZone: http://127.0.0.1:8761/eurekaServer/eureka
   instance:
     prefer-ip-address: true
+management: #actuator设置开放refresh映射端点，否则404
+  endpoints:
+    web:
+      #默认的路径是/actuator/ 可以更改去掉actuator
+      base-path: /
+      exposure:
+        include: refresh,info
